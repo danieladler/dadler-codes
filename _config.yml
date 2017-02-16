@@ -15,12 +15,14 @@
 # in the templates via {{ site.myvariable }}.
 title: dadler codes
 email: hello@dadler.codes
-description: >
+description: >  
   Portfolio and projects by Daniel W. Adler
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: adlerography
 github_username:  danieladler
+collections:
+  - projects
 
 # Build settings
 markdown: kramdown

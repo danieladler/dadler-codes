@@ -74,13 +74,13 @@
   transition: $common-transition;
 }
 
-.portfolio-index-item {
+.project-index-item {
   display: flex;
   flex-direction: row;
   margin: 10px 0;
 }
 
-.wrapper-portfolio-index-image {
+.wrapper-project-index-image {
   @include media($small-up) {
     display: none;
   }
@@ -90,7 +90,7 @@
   }
 }
 
-.wrapper-portfolio-index-content {
+.wrapper-project-index-content {
   @include media($small-up) {
     @include span-columns(12);
   }
@@ -100,13 +100,13 @@
   }
 }
 
-.portfolio-index-image {
+.project-index-image {
   min-height: 115px;
   min-width:  115px;
   background-color: lightgray;
 }
 
-.wrapper-portfolio-index-details {
+.wrapper-project-index-details {
   @include outer-container;
   margin: 10px 0;
 
