@@ -5,17 +5,3 @@ body {
 .main-content {
   @include outer-container;
 }
-
-.grid-test {
-  height: 200px;
-  background-color: skyblue;
-  margin: 10px 0;
-
-  @include media($small-up) {
-    @include span-columns(12);
-  }
-
-  @include media($medium-up) {
-    @include span-columns(6);
-  }
-}

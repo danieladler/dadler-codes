@@ -1,0 +1,76 @@
+////////// 'about' section //////////
+// use wrapper- classes to utilize Neat responsive grid + flexbox.
+// (Neat overrides display: flex, so have to nest wrappers with flex property)
+.wrapper-about {
+  @include media($small-up) {
+    @include span-columns(12);
+  }
+}
+
+.wrapper-about-left {
+  @include media($small-up) {
+    @include span-columns(8);
+  }
+}
+
+.wrapper-about-right {
+  @include media($small-up) {
+    @include span-columns(4);
+  }
+}
+
+.wrapper-image-about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.about {
+  background-color: skyblue;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.about-left,
+.about-right {
+  background-color: skyblue;
+  padding: 10px;
+  height: 100%;
+  // TEMPORARY
+  border: 1px solid pink;
+}
+
+.about-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.copy-about {
+  padding: 10px;
+  border: 1px solid pink;
+}
+
+.image-about {
+  background-image: url("https://s3-us-west-2.amazonaws.com/dadler-codes/expressJS-development/DWA.profile.smile-crop.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  transition: $common-transition;
+
+  @include media($small-up) {
+    height: 120px;
+    width: 120px;
+  }
+
+  @include media($large-mobile-up) {
+    height: 150px;
+    width: 150px;
+  }
+
+  @include media($medium-up) {
+    height: 200px;
+    width: 200px;
+  }
+}

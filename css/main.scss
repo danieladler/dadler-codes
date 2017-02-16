@@ -1,6 +1,10 @@
 ---
 ---
+// settings & site-wide
 @import "neat/neat";
 @import "grid_settings";
 @import "settings";
 @import "default";
+
+// specific views/pages
+@import "index";
