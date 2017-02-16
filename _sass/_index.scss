@@ -2,7 +2,8 @@
 // use wrapper- classes to utilize Neat responsive grid + flexbox.
 // (Neat overrides display: flex, so have to nest wrappers with flex property)
 .wrapper-about,
-.wrapper-promo {
+.wrapper-promo,
+.wrapper-portfolio-index {
   @include media($small-up) {
     @include span-columns(12);
   }
@@ -28,14 +29,16 @@
 }
 
 .about,
-.promo {
+.promo,
+.portfolio-index {
   background-color: skyblue;
   margin: 10px 0;
   padding: 10px;
   display: flex;
 }
 
-.promo {
+.promo,
+.portfolio-index {
   flex-direction: column;
 }
 
@@ -69,4 +72,63 @@
   padding-bottom: 90%;
   margin: 0 auto;
   transition: $common-transition;
+}
+
+.portfolio-index-item {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+}
+
+.wrapper-portfolio-index-image {
+  @include media($small-up) {
+    display: none;
+  }
+
+  @include media($medium-up) {
+    @include span-columns(2);
+  }
+}
+
+.wrapper-portfolio-index-content {
+  @include media($small-up) {
+    @include span-columns(12);
+  }
+
+  @include media($medium-up) {
+    @include span-columns(10);
+  }
+}
+
+.portfolio-index-image {
+  min-height: 115px;
+  min-width:  115px;
+  background-color: lightgray;
+}
+
+.wrapper-portfolio-index-details {
+  @include outer-container;
+  margin: 10px 0;
+
+  .details {
+    margin: 5px 0;
+  }
+
+  .details-left,
+  .details-right {
+    @include media($small-up) {
+      @include span-columns(12);
+    }
+
+    @include media($medium-up) {
+      @include span-columns(6);
+    }
+  }
+
+  .details-right {
+    @include media($medium-up) {
+      text-align: right;
+      padding-right: 10px;
+    }
+  }
 }
