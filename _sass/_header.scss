@@ -1,8 +1,7 @@
 #header {
   @include outer-container;
   height: $header-height;
-  // TEMPORARY:
-  border: 2px solid pink;
+  padding: $padding-body-margin-replacement;
 }
 
 .header-name,
@@ -19,21 +18,9 @@
 }
 
 .header-links {
-  list-style-type: none;
-  text-align: center;
   padding-bottom: 5px;
   height: 40px;
   @include outer-container;
-
-  a,
-  a:visited {
-    color: $link-color;
-    text-decoration: none;
-  }
-
-  a:hover {
-    font-weight: bold;
-  }
 }
 
 .header-links-1 {
@@ -57,7 +44,6 @@
 .header-link-2 {
   @include media($small-up) {
     @include span-columns(3)
-
   }
 }
 

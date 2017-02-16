@@ -1,7 +1,26 @@
 body {
   font-family: "Helvetica Neue", sans-serif;
+  margin: 0;
 }
 
 .main-content {
   @include outer-container;
+  padding: $padding-body-margin-replacement;
+}
+
+.linkset {
+  list-style-type: none;
+  text-align: center;
+  padding-left: 0;
+
+  a,
+  a:visited {
+    color: $link-color;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  a:hover {
+    color: gold;
+  }
 }
