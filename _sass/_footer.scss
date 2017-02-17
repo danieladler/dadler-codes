@@ -1,5 +1,5 @@
 #footer {
-  background-color: darkgrey;
+  background-color: darken(darkgrey, 50);
   height: $footer-height;
 }
 
@@ -24,6 +24,13 @@
 
 .footer-link {
   transition: $common-transition;
+  a {
+    color: white;
+  }
+
+  a:hover {
+    color: gold;
+  }
 }
 
 .footer-link-1,

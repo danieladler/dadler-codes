@@ -5,7 +5,8 @@
 }
 
 // color
-$link-color: darkblue;
+$base-blue: cornflowerblue;
+$link-color: $base-blue;
 
 // spatial relationships
 $padding-body-margin-replacement: 10px;

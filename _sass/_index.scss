@@ -11,12 +11,20 @@
 
 .wrapper-about-left {
   @include media($small-up) {
+    @include span-columns(12);
+  }
+  @include media($large-mobile-up) {
     @include span-columns(8);
   }
 }
 
 .wrapper-about-right {
   @include media($small-up) {
+    // @include span-columns(4);
+    display: none;
+  }
+
+  @include media($large-mobile-up) {
     @include span-columns(4);
   }
 }
@@ -31,7 +39,6 @@
 .about,
 .promo,
 .portfolio-index {
-  background-color: skyblue;
   margin: 10px 0;
   padding: 10px;
   display: flex;
@@ -42,17 +49,18 @@
   flex-direction: column;
 }
 
+.promo {
+  background-color: skyblue;
+}
+
 .portfolio-index {
   margin-bottom: 0;
 }
 
 .about-left,
 .about-right {
-  background-color: skyblue;
-  padding: 10px;
+  padding: 10px 0;
   height: 100%;
-  // TEMPORARY
-  border: 1px solid pink;
 }
 
 .about-left {
@@ -63,8 +71,9 @@
 }
 
 .copy-about {
-  padding: 10px;
-  border: 1px solid pink;
+  margin: 0;
+  padding: 10px 0;
+  font-size: 20px;
 }
 
 .image-about {
@@ -76,6 +85,10 @@
   padding-bottom: 90%;
   margin: 0 auto;
   transition: $common-transition;
+
+  @media(max-width: $large-mobile) {
+    display: none;
+  }
 }
 
 .project-index-item {
