@@ -55,6 +55,7 @@
 .footer-link-2 {
   @include media($small-up) {
     font-size: 12px;
+    padding: 0 5px; 
   }
 
   @include media($large-mobile-up) {

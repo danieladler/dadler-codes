@@ -1,7 +1,7 @@
-////////// 'about' section //////////
+////////// 'about-index' section //////////
 // use wrapper- classes to utilize Neat responsive grid + flexbox.
 // (Neat overrides display: flex, so have to nest wrappers with flex property)
-.wrapper-about,
+.wrapper-about-index,
 .wrapper-promo,
 .wrapper-portfolio-index {
   @include media($small-up) {
@@ -9,7 +9,7 @@
   }
 }
 
-.wrapper-about-left {
+.wrapper-about-index-left {
   @include media($small-up) {
     @include span-columns(12);
   }
@@ -18,7 +18,7 @@
   }
 }
 
-.wrapper-about-right {
+.wrapper-about-index-right {
   @include media($small-up) {
     // @include span-columns(4);
     display: none;
@@ -29,14 +29,14 @@
   }
 }
 
-.wrapper-image-about {
+.wrapper-image-about-index {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100%;
 }
 
-.about,
+.about-index,
 .promo,
 .portfolio-index {
   // margin: 10px 0;
@@ -58,26 +58,26 @@
   margin-bottom: 0;
 }
 
-.about-left,
-.about-right {
+.about-index-left,
+.about-index-right {
   padding: 10px 0;
   height: 100%;
 }
 
-.about-left {
+.about-index-left {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
 }
 
-.copy-about {
+.copy-about-index {
   margin: 0;
   padding: 10px 0;
   font-size: 20px;
 }
 
-.image-about {
+.image-about-index {
   background-image: url("https://s3-us-west-2.amazonaws.com/dadler-codes/expressJS-development/DWA.profile.smile-crop.JPG");
   background-repeat: no-repeat;
   background-size: cover;

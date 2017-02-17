@@ -1,0 +1,26 @@
+.wrapper-about {
+  @include span-columns(12);
+}
+
+.about {
+  padding: 10px;
+}
+
+.copy-about {
+  font-size: 20px;
+}
+
+.wrapper-images-about {
+  height: 100%;
+  overflow: auto;
+  padding: 10px;
+}
+
+.image-about {
+  @include media($small-up) {
+    @include span-columns(4);
+  }
+
+  @include media($medium-up) {
+  }
+}
