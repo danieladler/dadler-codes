@@ -1,0 +1,15 @@
+.wrapper-skills {
+  @include span-columns(12);
+}
+
+.skills {
+  padding: 10px;
+}
+
+.copy-skills {
+
+}
+
+.item-skill-type {
+  font-weight: bold;
+}
