@@ -12,14 +12,35 @@
 .wrapper-footer-right {
   display: inline-block;
   height: $footer-height;
+  transition: $common-transition;
 }
 
 .wrapper-footer-left {
   float: left;
+  padding: 12px 0 12px 12px;
+
+  @media (max-width: $medium-screen) {
+    display: none;
+  }
 }
 
 .wrapper-footer-right {
   float: right;
+
+  @media (max-width: $medium-screen) {
+    float: none;
+    width: 100%;
+
+    & li:first-child {
+      padding-left: 0;
+    }
+  }
+}
+
+.copy-footer {
+  color: lightgrey;
+  font-size: 12px;
+  height: 100%;
 }
 
 .footer-link {
@@ -55,7 +76,7 @@
 .footer-link-2 {
   @include media($small-up) {
     font-size: 12px;
-    padding: 0 5px; 
+    padding: 0 5px;
   }
 
   @include media($large-mobile-up) {
