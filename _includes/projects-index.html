@@ -9,11 +9,32 @@
         {{ project.title }} is {{ project.blurb-long }}
       </p>
       <div class="wrapper-project-index-details">
-        <div class="details details-left">
-          Learn more | Vist [site] | Source Code
+        <div class="details-project">
+          <a href="{{project.portfolio-link}}">
+            More Info
+          </a> |
+          <a href="{{project.real-link}}">
+            Visit
+          </a> |
+          <a href="{{project.gh-link}}">
+            Source
+          </a>
         </div>
-        <div class="details details-right">
-          [tech 1] | [tech 2] | [tech 3]
+        <div class="details-project">
+          <ul class="list-project-tech">
+            <li>
+              <i class="fa fa-thumbs-up"></i>
+              {{project.tech-1}}
+            </li>
+            <li>
+              <i class="fa fa-thumbs-up"></i>
+              {{project.tech-2}}
+            </li>
+            <li>
+              <i class="fa fa-thumbs-up"></i>
+              {{project.tech-3}}
+            </li>
+          </ul>
         </div>
       </div>
     </div>

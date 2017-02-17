@@ -84,6 +84,7 @@
   border-radius: 50%;
   padding-bottom: 90%;
   margin: 0 auto;
+  margin-right: 0;
   transition: $common-transition;
 
   @media(max-width: $large-mobile) {
@@ -103,7 +104,7 @@
   }
 
   @include media($medium-up) {
-    @include span-columns(2);
+    @include span-columns(3);
   }
 }
 
@@ -113,13 +114,13 @@
   }
 
   @include media($medium-up) {
-    @include span-columns(10);
+    @include span-columns(9);
   }
 }
 
 .project-index-image {
-  min-height: 115px;
-  min-width:  115px;
+  min-height: 130px;
+  width: 100%;
   background-color: lightgray;
 }
 
@@ -127,24 +128,19 @@
   @include outer-container;
   margin: 10px 0;
 
-  .details {
-    margin: 5px 0;
-  }
-
-  .details-left,
-  .details-right {
+  .details-project {
     @include media($small-up) {
       @include span-columns(12);
     }
-
-    @include media($medium-up) {
-      @include span-columns(6);
-    }
   }
 
-  .details-right {
-    @include media($medium-up) {
-      text-align: right;
+  .list-project-tech {
+    list-style-type: none;
+    padding-left: 0;
+    color: grey;
+
+    & li {
+      display: inline;
       padding-right: 10px;
     }
   }
