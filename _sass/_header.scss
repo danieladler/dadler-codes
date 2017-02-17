@@ -1,6 +1,6 @@
 #header {
   @include outer-container;
-  height: $header-height;
+  // height: $header-height;
   padding: $padding-body-margin-replacement;
 }
 
@@ -18,8 +18,7 @@
 }
 
 .header-links {
-  padding-bottom: 5px;
-  height: 40px;
+  padding: 10px;
   @include outer-container;
 }
 
@@ -29,11 +28,7 @@
 
 .header-links-2 {
   display: none;
-  transition: $common-transition;
-
-  &.active {
-    display: block;
-  }
+  border-top: 1px solid lightgrey;
 }
 
 .header-link {

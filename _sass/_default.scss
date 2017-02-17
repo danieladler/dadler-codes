@@ -1,6 +1,7 @@
 body {
   font-family: "Helvetica Neue", sans-serif;
   margin: 0;
+  min-width: $small-screen;
 }
 
 a,
@@ -16,7 +17,7 @@ a:hover {
 
 .main-content {
   @include outer-container;
-  padding: $padding-body-margin-replacement;
+  padding: 0 $padding-body-margin-replacement;
 }
 
 .linkset {
