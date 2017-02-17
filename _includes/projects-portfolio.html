@@ -1,16 +1,17 @@
 {% for project in site.projects %}
-  <div class="project-index-item">
-    <div class="wrapper-project-index-image">
-      <img src="{{project.image-link-index}}" class="project-index-image" />
+  <div class="project-portfolio-item">
+    <a name="{{project.anchor-link}}"></a>
+    <div class="wrapper-project-portfolio-image">
+      <img src="{{project.image-link-portfolio}}" class="project-portfolio-image" />
     </div>
-    <div class="wrapper-project-index-content">
-      <h3 class="title title-project-index-item"> {{ project.title }} </h3>
-      <p class="copy copy-project-index-item">
-        {{ project.title }} is {{ project.blurb-short }}
+    <div class="wrapper-project-portfolio-content">
+      <h3 class="title title-project-portfolio-item"> {{ project.title }} </h3>
+      <p class="copy copy-project-portfolio-item">
+        {{ project.title }} is {{ project.blurb-long }}
       </p>
-      <div class="wrapper-project-index-details">
+      <div class="wrapper-project-portfolio-details">
         <div class="details-project">
-          <a href="/portfolio/#{{project.anchor-link}}">
+          <a href="{{project.portfolio-link}}">
             More Info
           </a> |
           <a href="{{project.real-link}}">
@@ -22,6 +23,9 @@
         </div>
         <div class="details-project">
           <ul class="list-project-tech">
+            <li>
+              Technology highlights:
+            </li>
             <li>
               <i class="fa fa-thumbs-up"></i>
               {{project.tech-1}}
