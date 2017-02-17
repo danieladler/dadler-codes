@@ -2,20 +2,6 @@
   @include span-columns(12);
 }
 
-.portfolio {
-  padding: 10px;
-}
-
-.project-portfolio-item {
-  display: flex;
-  flex-direction: column;
-  margin: 10px 0;
-}
-
-.title-project-portfolio-item {
-  font-size: 26px;
-}
-
 .wrapper-project-portfolio-image {
   @include media($small-up) {
     @include span-columns(12);
@@ -26,6 +12,26 @@
   @include media($small-up) {
     @include span-columns(12);
   }
+}
+
+.portfolio {
+  padding: 10px;
+}
+
+.project-portfolio-item {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.title-project-portfolio-item,
+.details-project-portfolio {
+  display: inline-block;
+}
+
+.title-project-portfolio-item {
+  font-size: 26px;
+  padding-right: 15px;
 }
 
 .project-portfolio-image {
@@ -39,7 +45,7 @@
   @include outer-container;
   margin: 10px 0;
 
-  .details-project {
+  .details-project-portfolio {
     @include media($small-up) {
       @include span-columns(12);
     }

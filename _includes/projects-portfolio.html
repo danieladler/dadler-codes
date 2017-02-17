@@ -6,21 +6,18 @@
     </div>
     <div class="wrapper-project-portfolio-content">
       <h3 class="title title-project-portfolio-item"> {{ project.title }} </h3>
+      <div class="details-project-portfolio">
+        <a href="{{project.real-link}}">
+          Visit
+        </a> |
+        <a href="{{project.gh-link}}">
+          Source
+        </a>
+      </div>
       <p class="copy copy-project-portfolio-item">
         {{ project.title }} is {{ project.blurb-long }}
       </p>
       <div class="wrapper-project-portfolio-details">
-        <div class="details-project">
-          <a href="{{project.portfolio-link}}">
-            More Info
-          </a> |
-          <a href="{{project.real-link}}">
-            Visit
-          </a> |
-          <a href="{{project.gh-link}}">
-            Source
-          </a>
-        </div>
         <div class="details-project">
           <ul class="list-project-tech">
             <li>
