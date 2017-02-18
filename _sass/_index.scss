@@ -110,6 +110,8 @@
 }
 
 .wrapper-project-index-content {
+  transition: $offscreen-transition;
+
   @include media($small-up) {
     @include span-columns(12);
   }
@@ -123,7 +125,13 @@
   min-height: 130px;
   width: 100%;
   background-color: lightgray;
+  transition: $offscreen-transition;
+
+  @media (max-width: $medium-screen) {
+    transform: translateX(-300px);
+  }
 }
+
 
 .wrapper-project-index-details {
   @include outer-container;

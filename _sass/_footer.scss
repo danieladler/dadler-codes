@@ -12,20 +12,22 @@
 .wrapper-footer-right {
   display: inline-block;
   height: $footer-height;
-  transition: $common-transition;
 }
 
 .wrapper-footer-left {
   float: left;
   padding: 12px 0 12px 12px;
+  transition: $offscreen-transition;
 
   @media (max-width: $medium-screen) {
-    display: none;
+    // position: absolute;
+    transform: translateY(100%);
   }
 }
 
 .wrapper-footer-right {
   float: right;
+  transition: 0.4s;
 
   @media (max-width: $medium-screen) {
     float: none;
@@ -57,9 +59,9 @@
 .footer-link-1,
 .footer-link-2 {
   display: inline-block;
-  @include media($small-up) {
-    width: auto;
-  }
+  // @include media($small-up) {
+  //   width: auto;
+  // }
 }
 
 .footer-link-1 {
