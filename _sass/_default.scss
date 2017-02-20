@@ -7,6 +7,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  font-family: "Karla";
 }
 
 a,
@@ -17,7 +18,7 @@ a:visited, {
 }
 
 a:hover {
-  color: gold;
+  color: $base-gold;
 }
 
 .main-content {
