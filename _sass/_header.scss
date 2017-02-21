@@ -18,14 +18,30 @@
 }
 
 .header-name {
-  margin: 10px 0 20px 0;
+  margin: 10px 0 10px 0;
   font-family: "Karla";
-  font-size: 36px;
+
+  @include media($small-up) {
+    font-size: 20px;
+  }
+
+  @include media($large-mobile-up) {
+    font-size: 36px;
+  }
 }
 
+// header links containers
+
 .header-links {
-  padding: 10px;
   @include outer-container;
+
+  @include media($small-up) {
+    padding: 5px 0px;
+  }
+
+  @include media($medium-up) {
+    padding: 10px;
+  }
 }
 
 .header-links-1 {
@@ -37,8 +53,16 @@
   border-top: 1px solid lightgrey;
 }
 
+// the actual header links
+
 .header-link {
-  // TBD
+  @include media($small-up) {
+    font-size: 12px;
+  }
+
+  @include media($medium-up) {
+    font-size: 16px;
+  }
 }
 
 .header-link-1 {
@@ -48,8 +72,13 @@
 }
 
 .header-link-2 {
+  @media(max-width: $large-mobile) {
+    font-size: 10px;
+  }
+
   @include media($small-up) {
-    @include span-columns(3)
+    @include span-columns(3);
+    // margin: 0;
   }
 }
 

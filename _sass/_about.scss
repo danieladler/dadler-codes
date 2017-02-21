@@ -12,7 +12,13 @@
 
 .list-about,
 .copy-about {
-  font-size: 20px;
+  @include media($small-up) {
+    font-size: 16px;
+  }
+
+  @include media($large-mobile-up) {
+    font-size: 20px;
+  }
 }
 
 .wrapper-images-about {

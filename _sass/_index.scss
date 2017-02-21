@@ -87,10 +87,17 @@
 .copy-about-index {
   margin: 0;
   padding: 10px 0;
-  font-size: 20px;
 
   @media (max-width: $medium-screen) {
+  }
+
+  @include media($small-up) {
+    font-size: 16px;
     text-align: center;
+  }
+
+  @include media($medium-up) {
+    font-size: 20px;
   }
 }
 
@@ -114,6 +121,16 @@
   display: flex;
   flex-direction: row;
   margin: 10px 0;
+}
+
+.title-project-index-item {
+  @include media($small-up) {
+    margin-bottom: 2px;
+  }
+
+  @include media($medium-up) {
+    margin-bottom: 10px;
+  }
 }
 
 .wrapper-project-index-image {

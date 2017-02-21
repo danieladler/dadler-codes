@@ -6,14 +6,14 @@ $max-width: 800px;
 
 // Screen Sizes:
 $small-screen: 320px;
-$large-mobile: 412px;
+$large-mobile: (412px - 1px);
 $medium-screen: (768px - 1px);
 $large-screen: 1024px;
 $x-large-screen: 1440px;
 
 // Custom Breakpoints:
 $small-up: new-breakpoint(min-width $small-screen 12);
-$large-mobile-up: new-breakpoint(min-width $large-mobile -1 );
+$large-mobile-up: new-breakpoint(min-width $large-mobile);
 $medium-up: new-breakpoint(min-width $medium-screen 12);
 $large-up: new-breakpoint(min-width $large-screen 12);
 $x-large-screen: new-breakpoint(min-width $x-large-screen 12);
