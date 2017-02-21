@@ -38,10 +38,15 @@
 }
 
 .header-link {
-
+  // TBD
 }
 
-.header-link-1,
+.header-link-1 {
+  @include media($small-up) {
+    @include span-columns(4)
+  }
+}
+
 .header-link-2 {
   @include media($small-up) {
     @include span-columns(3)

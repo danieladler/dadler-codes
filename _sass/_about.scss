@@ -6,6 +6,10 @@
   padding: 10px;
 }
 
+.title-about {
+  font-size: 28px;
+}
+
 .list-about,
 .copy-about {
   font-size: 20px;
@@ -24,4 +28,12 @@
 
   @include media($medium-up) {
   }
+}
+
+.wrapper-hr {
+  margin: 30px 0;
+}
+
+.hr-about {
+  width: 50%;
 }
