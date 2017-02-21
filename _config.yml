@@ -17,7 +17,7 @@ title: dadler codes
 email: hello@dadler.codes
 description: Portfolio and projects by Daniel W. Adler
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://dadler.codes" # the base hostname & protocol for your site, e.g. http://example.com
+url: "www.dadler.codes" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: adlerography
 github_username: danieladler
 collections:
