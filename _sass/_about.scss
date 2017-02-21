@@ -37,3 +37,14 @@
 .hr-about {
   width: 50%;
 }
+
+@media (max-width: $large-mobile) {
+  .image-about[data-image-about="left"],
+  .image-about[data-image-about="right"] {
+    display: none;
+  }
+
+  .image-about[data-image-about="middle"] {
+    @include span-columns(12);
+  }
+}
