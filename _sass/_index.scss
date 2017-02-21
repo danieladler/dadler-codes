@@ -70,6 +70,13 @@
   height: 100%;
 }
 
+.about-index,
+.about-index-left {
+  @media (max-width: $medium-screen + 1) {
+    padding-top: 0px;
+  }
+}
+
 .about-index-left {
   display: flex;
   flex-direction: column;
@@ -81,6 +88,10 @@
   margin: 0;
   padding: 10px 0;
   font-size: 20px;
+
+  @media (max-width: $medium-screen) {
+    text-align: center;
+  }
 }
 
 .image-about-index {

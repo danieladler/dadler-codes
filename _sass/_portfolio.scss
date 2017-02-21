@@ -18,6 +18,16 @@
   padding: 10px;
 }
 
+.copy-project-portfolio-item {
+  @include media($small-up) {
+    font-size: 20px;
+  }
+
+  @include media($medium-up) {
+    font-size: 16px;
+  }
+}
+
 .project-portfolio-item {
   display: flex;
   flex-direction: column;
