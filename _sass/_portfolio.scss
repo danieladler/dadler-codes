@@ -20,7 +20,7 @@
 
 .copy-project-portfolio-item {
   @include media($small-up) {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   @include media($medium-up) {
@@ -40,8 +40,15 @@
 }
 
 .title-project-portfolio-item {
-  font-size: 26px;
-  padding-right: 15px;
+  @include media($small-up) {
+    font-size: 20px;
+    padding-right: 5px;
+  }
+
+  @include media($medium-up) {
+    font-size: 24px;
+    padding-right: 10px;
+  }
 }
 
 .project-portfolio-image {
