@@ -74,8 +74,8 @@
     color: grey;
 
     & li {
-      display: inline;
       transition: 0.3s;
+      display: inline-block;
 
       @include media($small-up) {
         font-size: 12px;
@@ -85,7 +85,13 @@
       @include media($medium-up) {
         font-size: 16px;
         padding-right: 15px;
+        margin-bottom: 10px;
       }
     }
+
+    & a,
+      a:visited {
+        color: grey;
+      }
   }
 }
