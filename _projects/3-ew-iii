@@ -1,0 +1,14 @@
+---
+title: Eugene Weston III
+blurb-short: Paying homage to my grandfather (and giving myself a front end playground) by turning a 1950's pamphlet into a 2017 responsive webpage.
+blurb-long: See that <strong>{Weston}</strong> up at the top of your screen? It comes from Eugene Weston III, my maternal grandfather. He was a third-generation architect who designed some really beautiful midcentury homes, and his aesthetic has heavily influenced my tastes. So when I discovered a yellowing tri-fold pamphlet from the mid-50's describing his services, a lightbulb went off&#58; what if it was recreated word for word, film grain by film grain, but as a responsive web page? ew-iii is the result. Now I aspire for this to be an ongoing project where I continue to apply bits of front end knowledge as I learn new techniques. <br><br> <strong> NB&#58 </strong> I'm pretty sure the photographs were taken by Julius Shulman, so all credit for these beautiful images goes to him and his estate.
+anchor-link: ew-iii
+image-link: https://s3-us-west-2.amazonaws.com/dadler-codes/ewiii-mockup.jpg
+real-link: http://ew-iii.herokuapp.com
+gh-link: https://github.com/danieladler/ew-iii
+tech-1: Express
+tech-2: BEM-flavored SASS
+tech-3: <a href="http://felixniklas.com/paperfold/"> Paperfold.js </a>
+tech-4: A 60-year-old trifold pamphlet
+tech-5: Classic architectural photography
+---
